@@ -1,0 +1,176 @@
+       :root {
+            --primary-color: 
+            #cf1313;
+            --secondary-color: #2c72f5;
+            --background-color: #ffffff;
+            --text-color: #333;
+            --light-gray: #eee;
+            --font-family: 'Roboto', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+
+
+        .hero-banner {
+            background-image: url("https://th.bing.com/th/id/R.af961fb11e26a721367f611658167029?rik=Way2NiJZegjpjg&pid=ImgRaw&r=0");
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            color: #cebdbd;
+            text-align: center;
+            padding: 4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+    
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+
+        .hero-banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-banner p {
+            font-size: 1.1rem;
+        }
+
+
+        .image-container, .form-section {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .form-section {
+            background: linear-gradient(to bottom, #ffffff, #969390);
+            padding: 4rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .form-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .talents-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 0.8rem;
+            border: 1px solid var(--light-gray);
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .submit-btn {
+            transition: background-color 0.3s ease;
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            padding: 1rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #1b3cf8;
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .hero-banner {
+                padding: 2rem 1rem;
+            }
+
+            .hero-banner h1 {
+                font-size: 2rem;
+            }
+
+            .hero-banner p {
+                font-size: 1rem;
+            }
+        }
+        footer {
+  background-color: #333; /* Cor de fundo */
+  color: white;           /* Cor do texto */
+  text-align: center;     /* Alinha o texto ao centro */
+  padding: 20px;          /* Espaçamento interno */
+}
+
